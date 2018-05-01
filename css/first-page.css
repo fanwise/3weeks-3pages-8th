@@ -1,3 +1,237 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    font-family: Arial;
+    min-width: 1200px;
+}
+
+header {
+    background-image: url("../images/week-1/header.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+nav {
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 30px;
+    border-right: 1px solid #a1a1a1;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 72px;
+    text-decoration: none;
+}
+
+header section {
+    height: 323px;
+    padding-top: 172px;
+    text-align: center;
+}
+
+header section h1 {
+    margin: 0 auto;
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 300;
+}
+
+header section p {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px auto;
+}
+
+.welcome-info {
+    color: #585858;
+    background-color: #f2f2f2;
+}
+
+.welcome-intro {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px; 
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.welcome-intro h2 {
+    margin: 30px auto;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 300;
+}
+
+.welcome-intro p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.welcome-intro strong {
+    color: #000;
+}
+
+.welcome-intro a {
+    text-decoration: none;
+    color: #80ba8d;
+}
+
+.welcome-detail {
+    width: 1200px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 88px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.welcome-detail article {
+    float: left;
+    margin-right: 64px;
+    width: calc((100% - 128px) / 3);
+}
+
+.welcome-detail article:last-child {
+    margin-right: 0;
+}
+
+.welcome-detail h3 {
+    margin: 40px auto;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.welcome-detail p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.welcome-detail a {
+    display: inline-block;
+    width: 155px;
+    height: 54px;
+    margin-top: 40px;
+    line-height: 54px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #80ba83;
+    border-radius: 6px;
+}
+
+.products {
+    width: 1200px;
+    color: #6c6c6c;
+    text-align: center;
+    margin: 88px auto 38px auto;
+    overflow: hidden;
+}
+
+.products article {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: calc((100% - 50px) / 2);
+}
+
+.products article:nth-child(even) {
+    margin-right: 0;
+}
+
+.products h3 {
+    margin: 51px auto;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.products p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+footer .poetry  {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/week-1/header.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.poetry q {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    padding: 120px 0;
+    font-size: 20px;
+    line-height: 34px;
+    font-style: italic;
+    text-align: center;
+}
+
+footer .contact {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #161616;
+}
+
+.contact h3 {
+    margin: 0;
+    padding-top: 71px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 300;
+}
+
+.contact p {
+    color: #434343;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contact ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 91px;
+}
+
+.contact li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.contact small {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 110px;
+    line-height: 110px;
+    color: #2d2d2d;
+    border-top: 1px solid #1d1d1d;
+}
+
+.contact small a {
+    text-decoration: none;
+    color: #424242;
 }
