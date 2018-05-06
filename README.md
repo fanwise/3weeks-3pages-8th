@@ -4,3 +4,6 @@
 3. Run first week page: `npm run week1`
 4. Run second week page: `npm run week2`
 3. Run third week page: `npm run week3`
+
+# Week 1
+https://3z3.jiaochifan.com/
