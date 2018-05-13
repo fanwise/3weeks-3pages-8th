@@ -1,3 +1,516 @@
-h1 {
-    color: red;
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+    font-family: Georgia, sans-serif;
+}
+
+.top {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 46px;
+}
+
+nav .logo {
+    width: 120px;
+    height: 120px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 233px;
+    margin-top: 37px;
+    margin-bottom: 64px;
+    padding: 0;
+}
+
+nav li i.iconfont {
+    color: #000;
+    font-size: 1.875rem;
+    margin-right: 13px;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    color: #41AE9B;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: none;
+}
+
+nav h3 {
+    font-size: 0.75rem;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #E5E5E5;
+    font-weight: normal;
+}
+
+nav .contact {
+    width: 140px;
+}
+
+.contact .button {
+    display: block;
+    margin: 9px 0 32px 0;
+    padding: 0px 7px;
+    color: #41AE9B;
+    line-height: 1.7rem;
+    font-size: 0.675rem;
+    font-style: italic;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact .button i.iconfont {
+    padding-right: 4px;
+}
+
+.contact .detail {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    line-height: 1.2rem;
+    font-size: 0.65rem;
+    font-style: italic;
+}
+
+.content {
+    width: 896px;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.gallery h2 {
+    position: absolute;
+    top: 286px;
+    left: 0;
+    padding: 11px 15px 11px 22px;
+    background-color: #fff;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.gallery p {
+    position: absolute;
+    top: 335px;
+    left: 0;
+    background-color: #000;
+    font-size: 1rem;
+    font-style: italic;
+    color: #fff;
+    padding: 11px 6px 11px 20px;
+}
+
+.gallery .photographer {
+    position: absolute;
+    right: 8px;
+    top: 419px;
+    font-size: 0.51rem;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    color: #000;
+}
+
+.gallery strong {
+    display: none;
+}
+
+.category {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    list-style: none;
+    padding: 0;
+}
+
+.category li {
+    flex-basis: 25%;
+}
+
+.category li button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #D4EDE9;
+    background-color: #EFF8F7;
+    color: #41AE9B;
+    font-family: Georgia, sans-serif;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.category li:last-child button {
+    border-right: none;
+}
+
+.category li button:hover {
+    background-color: #DAEFEC;
+}
+
+.category li button h4 {
+    font-size: 1.125rem;
+    font-weight: normal; 
+}
+
+.category li button p {
+    font-size: 0.6875rem;
+    font-style: italic;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    margin: 31px 0;
+    padding: 0px 12px;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+.subscribe form {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.subscribe input[type=text] {
+    height: 24px; 
+    width: 260px;
+    margin-right: 12px;
+    padding: 0 3px;
+    font-size: 0.875rem;
+    border: 1px solid;
+    border-color: #848484 #c1c1c1 #e1e1e1;
+}
+
+.subscribe input[type=submit] {
+    box-sizing: content-box;
+    width: 80px;
+    height: 22px;   
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    background: linear-gradient(to bottom, #fff, #ddd);
+}
+
+.subscribe i.iconfont {
+    color: #000;
+    font-size: 2.25rem;
+    margin: 0 13px 0 5px;
+}
+
+.subscribe p {
+    font-size: 0.75rem;
+    font-style: italic;
+    padding: 9px 30px 12px 0;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog article a {
+    display: block;
+    text-decoration: none;
+}
+
+.blog article img {
+    box-sizing: border-box;
+    padding: 9px;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+}
+
+.blog article {
+    flex-basis: 23%;
+}
+
+.blog article h4 {
+    color: #41AE9B;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 13px 0;
+}
+
+.blog article p {
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+}
+
+.blog article time {
+    color: #aaa;
+    font-size: 0.875rem;
+}
+
+.blog article .more {
+    display: block;
+    margin: 10px 0;
+}
+
+.blog article .more a {
+    display: inline;
+    color: #41AE9B;
+    font-size: 0.875rem;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding-top: 20px;
+    border-top: 2px solid #E5E5E5;
+}
+
+footer .privacy ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+footer .privacy a {
+    color: #41AE9B;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-decoration: none;
+    padding-right: 5px;
+    border-right: 1px solid #E5E5E5;
+}
+
+footer .privacy li:last-child a {
+    padding-right: 0;
+    border-right: none;
+}
+
+footer .privacy p {
+    margin: 5px 0;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+footer .social-network a {
+    text-decoration: none;
+}
+
+footer .social-network i.iconfont {
+    color: #aaa;
+    font-size: 1.875rem;
+}
+
+@media (max-width: 699.98px) { 
+    .top {
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 350px;
+    }
+
+    nav li i.iconfont {
+        display: none;
+    }
+
+    nav .contact {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0;
+        flex-wrap: wrap-reverse;
+    }
+
+    nav .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-basis: 100%;
+        flex-direction: row;
+        height: auto;
+        padding-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #E5E5E5;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    nav li a {
+        font-size: 0.75rem;
+    }
+
+    .gallery h2 {
+        position: relative;
+        top: 0px;
+        font-size: 1rem;
+    }
+
+    .gallery p {
+        position: relative;
+        top: 0px;
+        font-size: 0.625rem;
+    }
+
+    .gallery .photographer {
+        position: relative;
+        top: 0px;
+        font-size: 0.625rem;
+        background-color: #fff;
+        border-radius: 0;
+        padding: 0;
+        padding-top: 10px;
+        left: 0;
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+
+    .gallery strong {
+        display: inline;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .subscribe {
+        flex-wrap: wrap;
+        margin: 11px 0 31px 0;
+    }
+
+    .subscribe p {
+        font-size: 0.675rem;
+        flex-basis: 80%;
+        padding-right: 0;
+    }
+
+    .subscribe form {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe input[type=text] {
+        width: 180px;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .blog article {
+        margin: 0 10px 10px 10px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .top {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 700px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+
+    nav .contact {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    nav li i.iconfont {
+        margin-right: 0;
+    }
+
+    nav li {
+        margin-right: 28px;
+    }
+
+    nav li:last-child {
+        margin-right: 0;
+    }
+
+    nav li a {
+        flex-direction: column;
+    }
+
+    .gallery h2 {
+        top: 210px;
+    }
+
+    .gallery p {
+        top: 259px;
+    }
+
+    .gallery .photographer {
+        top: 325px;
+    }
+
+    .category {
+        height: 35px;
+    }
+
+    .category li button {
+        text-align: center;
+    }
+
+    .category li button h4 {
+        font-size: 0.875rem;
+    }
+
+    .category li button p {
+        display: none;
+    }
+
+    .subscribe input[type=text] {
+        width: 120px;
+    }
 }
